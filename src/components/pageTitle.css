@@ -1,0 +1,23 @@
+/* Page Title */
+
+.pagetitle{
+    margin-bottom: 10px;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+
+.pagetitle h1{
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #0c965f;
+}
+
+.breadcumb-item i{
+    color: #0c965f;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,146 @@
+/* Main container for Carbon Footprint page */
+.carbon-footprint {
+  padding: 40px 24px;
+  background-color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Title of Carbon Footprint */
+.carbon-footprint h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #0c965f, #045937);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0c965f;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.carbon-footprint h3 {
+
+  background: linear-gradient(to right, #0c965f, #045937);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #0c965f;
+  
+}
+
+/* Description Section */
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: left;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Chart container */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Card for each bar chart */
+.chart-card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Card per il grafico a torta */
+.chart-doughnut-card {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+  border-radius: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; /* Centra la card nella pagina */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  /* Centra il contenuto dentro la card */
+}
+
+/* Button and arrows for next sections */
+.next-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.down-arrow-btn {
+  font-size: 2rem;
+  color: #0c965f;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-link {
+  text-decoration: none;
+}
+
+/* Canva container for initiatives */
+.commitment-canva {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.canva-container {
+  width: 100%;
+  height: 450px;
+  background-color: #e9f5f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canva-inner {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.circle1, .circle2, .circle3 {
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle1 {
+  background-color: #b5d6b6;
+}
+
+.circle2 {
+  background-color: #f7e58f;
+}
+
+.circle3 {
+  background-color: #95cbe3;
+}

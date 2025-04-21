@@ -24,8 +24,8 @@ export default function ErrorPage(){
     <div class="number">4</div>
   </div>
 
-  <div class="text">Oops. The page you're looking for doesn't exist.</div>
-  <Link class="button" to='/'>Back Home</Link>
+  <div class="text">Oops. La Pagina che cercavi non esiste.</div>
+  <Link class="button" to='/'>Torna Indietro</Link>
 </div>
 
 

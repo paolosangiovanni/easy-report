@@ -1,0 +1,11 @@
+.page-content{
+    margin-top: 0px;
+    padding-left:  10px;
+    transition: all 0.3s;
+}
+
+@media (max-width){
+     .page-content{
+        padding: 20px;
+     }
+}

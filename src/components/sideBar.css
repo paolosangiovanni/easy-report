@@ -107,12 +107,30 @@ margin-bottom: 5px;
     color: #0c965f,
 }
 
+.sidebar-nav .nav-link{
+    color: #0c965f;;
+    background: #fff;
+}
+
+.sidebar-nav .nav-link i{
+    color: #0c965f,
+}
+
 .sidebar-nav .nav-link:hover {
     color: #045937;
     background: #f6f9ff;
 }
 
 .sidebar-nav .nav-link:hover i{
+    color: #045937;
+}
+
+.sidebar-nav .nav-link:focus {
+    color: #045937;
+    background: #f6f9ff;
+}
+
+.sidebar-nav .nav-link:focus i{
     color: #045937;
 }
 
@@ -151,14 +169,16 @@ margin-bottom: 5px;
     font-style: normal;
 }
 
-.sidebar-nav .nav-content a:hover, 
-.sidebar-nav .nav-content a:active {
+.sidebar-nav .nav-content a:hover {
     color: #045937;
+    background-color: #f6f9ff;
 }
 
-.sidebar-nav .nav-content a.active i {
+.sidebar-nav .nav-content a:focus {
     color: #045937;
+    background-color: #f6f9ff;
 }
+
 
 .sidebar-nav .nav-content span {
     padding-left: 10px;

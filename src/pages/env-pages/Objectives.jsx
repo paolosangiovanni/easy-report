@@ -1,10 +1,10 @@
 import React from 'react'
 import './pagecontent.css'
 
-function Objectives() {
+function Obiettivi() {
   return (
     <div id='main' className='page-content'>Objectives Page</div>
   )
 }
 
-export default Objectives
+export default Obiettivi

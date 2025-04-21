@@ -6,6 +6,14 @@
     transition: all 0.3s;
 }
 
+.breadcrumb-items .link-item:hover{
+    color: #045937;
+}
+
+.breadcrumb-items #link-item-home:hover{
+    color: #045937;
+}
+
 
 .link-item {
     font-size: 17px;
@@ -15,6 +23,5 @@
 
 #link-item-home{
     font-size: 17px;
-    font-weight: 600;
     color: #0c965f;
 }

@@ -21,14 +21,21 @@ import { createBrowserRouter, RouterProvider,  } from 'react-router-dom';
 import Overview from './pages/Overview';
 import ErrorPage from './pages/ErrorPage';
 
-//import Costants for Enviroment / social / Governance
- import './data/route_costants.js';
-import FlightEfficencyplan from './pages/FlightEfficencyPlan.jsx';
-import CarbonFootprint from './pages/CarbonFootprint.jsx';
-import EnergyConsuption from './pages/EnergyConsuption.jsx';
-import Investments from './pages/Investments.jsx';
-import Objectives from './pages/Objectives.jsx';
+//import Costants for Enviroment
+import './data/route_costants.js';
+import FlightEfficencyplan from './pages/env-pages/FlightEfficencyPlan.jsx';
+import CarbonFootprint from './pages/env-pages/CarbonFootprint.jsx';
+import InnovazioneTecnologica from './pages/env-pages/InnovazioneTecnologica.jsx';
+import Investimenti from './pages/env-pages/Investimenti.jsx';
+import Obiettivi from './pages/env-pages/Objectives.jsx';
 
+
+
+
+//Import Costants for Intros
+import EnviromentIntro from './pages/env-pages/EnvironmentIntro.jsx';
+import SocialIntro from './pages/soc-pages/SocialIntro.jsx';
+import GovernanceIntro from './pages/gov-pages/GovernanceIntro.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,25 +43,41 @@ const router = createBrowserRouter([
     element: <><Layout/><Overview/></>,
     errorElement: <ErrorPage/>
   },
+  //Intro page
   {
-    path:'/FEP',
+    path: '/Enviroment',
+    element: <><Layout /><EnviromentIntro/></>,
+  },
+  {
+    path: '/Social',
+    element: <><Layout /><SocialIntro /></>,
+  },
+  {
+    path: '/Governance',
+    element: <><Layout /><GovernanceIntro /></>,
+  },
+
+  //Sottopagine Enviromennt
+
+  {
+    path:'/Enviroment/FEP&FRA',
     element: <><Layout/> <FlightEfficencyplan/></>,
   },
   {
-    path:'/CarbonFootprint',
+    path:'/Enviroment/CarbonFootprint',
     element: <><Layout/> <CarbonFootprint/></>,
   },
   {
-    path:'/EnergyConsuption',
-    element: <><Layout/> <EnergyConsuption/></>,
+    path:'/Enviroment/InnovazioneTecnologica',
+    element: <><Layout/> <InnovazioneTecnologica/></>,
   },
   {
-    path:'/Investments',
-    element: <><Layout/> <Investments/></>,
+    path:'/Enviroment/Investimenti',
+    element: <><Layout/> <Investimenti/></>,
   },
   {
-    path:'/Objectives',
-    element: <><Layout/> <Objectives/></>,
+    path:'/Enviroment/Obiettivi',
+    element: <><Layout/> <Obiettivi/></>,
   }
   
 ])

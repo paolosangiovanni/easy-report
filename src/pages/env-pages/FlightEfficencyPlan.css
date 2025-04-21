@@ -1,0 +1,130 @@
+
+/* Contenitore principale per iil flight efficency plan */
+.flight-efficiency-plan {
+    padding: 40px 24px;
+    background-color: #ffffff; /* Sfondo bianco */
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Titolo principale */
+.flight-efficiency-plan h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+/* Descrizione del Flight Efficiency Plan */
+.description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px; /* Come richiesto */
+    text-align: left; /* Testo giustificato */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; /* Centrato il testo */
+}
+
+/* Contenitore per i grafici */
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+/* Card per ogni grafico */
+.chart-card {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icona accanto al titolo */
+.chart-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #045937;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-card h3 span {
+    margin-right: 8px;
+    font-size: 1.6rem;
+    color: #0c965f; /* Colore verde per le icone */
+}
+
+/* Descrizione dei grafici */
+.chart-description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+/* Testo finale con link di download */
+.note {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 32px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.note strong {
+    color: #0c965f;
+    font-weight: 700;
+}
+
+/* Responsivo per schermi più piccoli */
+@media (max-width: 768px) {
+    .chart-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .chart-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .flight-efficiency-plan h2 {
+        font-size: 2rem; /* Riduci la dimensione del titolo su schermi piccoli */
+    }
+    .description {
+        font-size: 1rem;
+    }
+
+    .chart-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .chart-description {
+        font-size: 0.85rem;
+    }
+}
+

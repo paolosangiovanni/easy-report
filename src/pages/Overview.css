@@ -1,0 +1,88 @@
+/* Container principale */
+.main-content {
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Container interno per testo, grafici e card */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center; /* Centrato tutto il contenuto, incluse le card */
+}
+
+
+/* Card per il download report */
+.card-download-report-overview {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex; /* Aggiunta per centrare il contenuto */
+  flex-direction: column;
+  align-items: center; /* Centrato il contenuto della card */
+  justify-content: center; /* Aggiunta per centrare il contenuto verticalmente */
+}
+
+.card-body {
+  text-align: center;
+}
+
+.img-report-23 {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+.download-link {
+  display: block;
+  background-color: #0c965f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 12px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-link:hover {
+  background-color: #045937;
+  color: #ffffff;
+}
+
+/* Responsivo layout */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .content-wrapper {
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-overview {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .download-link {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

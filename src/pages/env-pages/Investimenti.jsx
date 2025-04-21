@@ -1,10 +1,10 @@
 import React from 'react'
 import './pagecontent.css'
 
-function Investments() {
+function Investimenti() {
   return (
     <div id='main' className='page-content'>Investments Page</div>
   )
 }
 
-export default Investments
+export default Investimenti

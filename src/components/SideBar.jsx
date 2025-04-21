@@ -1,26 +1,28 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import './sideBar.css';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom'; // Usa Link di react-router-dom per la navigazione
+
 function SideBar() {
   return (
     <aside id='sidebar' className='sidebar'>
         <ul className='sidebar-nav' id='sidebar-nav'>
             <li className='nav-item'>
-                <Link to='/'className='nav-link' href='/'>
-                 <i className='bi bi-house-door'></i>
-                 <span>Report Overview</span>
+                <Link to='/' className='nav-link'>
+                 <i>🏠</i>
+                 <span>Panoramica ENAV</span>
                 </Link>
             </li>
 
+            {/* Environment Section with Intro Page */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#enviroment-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i className="bi bi-image-alt bi-menu-button-wide"></i>
-                    <span>Enviroment</span>
+                    <i>🌿</i> {/* Icona Unicode per l'ambiente */}
+                    <span>Environment</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
                 <ul 
@@ -29,54 +31,52 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <Link to='/FEP'>
-                        <i className="bi bi-airplane-fill">
-                            <span>Flight Efficency Plan</span>
-                        </i>
+                    <Link to='/Enviroment'>
+                        <i>📜</i> {/* Icona di introduzione */}
+                        <span>Introduzione</span>
                     </Link>                       
                  </li>
-                 
                  <li>
-                    <Link to='/CarbonFootprint'>
-                        <i className="bi bi-tree-fill">
-                            <span>Carbon Footprint</span>
-                        </i>
+                    <Link to='/Enviroment/FEP&FRA'>
+                        <i>✈️</i> {/* Icona per il piano di efficienza */}
+                        <span>Flight Efficiency Plan & FRA</span>
+                    </Link>                       
+                 </li>
+                 <li>
+                    <Link to='/Enviroment/CarbonFootprint'>
+                        <i>🌳</i> {/* Icona per l'impronta di carbonio */}
+                        <span>Carbon Footprint</span>
                     </Link> 
                  </li>
                  <li>
-                    <Link to='/EnergyConsuption'>
-                        <i className="bi bi-lightning-fill">
-                            <span>Energy Consumption</span>
-                        </i>
+                    <Link to='/Enviroment/InnovazioneTecnologica'>
+                        <i>🌐</i> {/* Icona per il consumo di energia */}
+                        <span>Innovazione Tecnologica</span>
                     </Link>
-                        
                  </li>                   
                  <li>
-                    <Link to='/Investments'>
-                        <i className="bi bi-graph-up-arrow">
-                            <span>Investments</span>
-                        </i>
+                    <Link to='/Enviroment/Investimenti'>
+                        <i>📈</i> {/* Icona per gli investimenti */}
+                        <span>Investimenti</span>
                     </Link>
-                        
                  </li>  
                  <li>
-                    <Link to='/Objectives'>
-                        <i className="bi bi-bullseye">
-                            <span>Objectives</span>
-                        </i>
+                    <Link to='/Enviroment/Obiettivi'>
+                        <i>🎯</i> {/* Icona per gli obiettivi */}
+                        <span>Obiettivi</span>
                     </Link>                    
                  </li>    
                 </ul>
-
             </li>
 
+            {/* Social Section with Intro Page */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#social-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i className="bi bi-people-fill bi-menu-button-wide"></i>
+                    <i>👥</i> {/* Icona per la sezione Social */}
                     <span>Social</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -86,54 +86,52 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <a href='#'>
-                        <i className="bi bi-gender-trans">
-                            <span>Diversity & Inclusion</span>
-                        </i>
-                    </a>                       
+                    <Link to='/Social'>
+                        <i>📜</i> {/* Icona di introduzione per Social */}
+                        <span>Introduzione</span>
+                    </Link>                       
                  </li>
-                 
                  <li>
                     <a href='#'>
-                        <i className="bi bi-bandaid-fill">
-                            <span>Health & Safety</span>
-                        </i>
+                        <i>⚖️</i> {/* Icona per la diversità e l'inclusione */}
+                        <span>Diversità e Inclusione</span>
+                    </a>                       
+                 </li>
+                 <li>
+                    <a href='#'>
+                        <i>🩹</i> {/* Icona per la salute e la sicurezza */}
+                        <span>Salute & Sicurezza</span>
                     </a> 
                  </li>
                  <li>
                     <a href='#'>
-                        <i className="bi bi-person-plus-fill">
-                            <span>Employee Wellbeing</span>
-                        </i>
+                        <i>👨‍👩‍👧‍👦</i> {/* Icona per il benessere dei dipendenti */}
+                        <span>Benessere dei dipendenti</span>
                     </a>
-                        
                  </li>                   
                  <li>
                     <a href='#'>
-                        <i className="bi bi-people-fill">
-                            <span>Community Relations</span>
-                        </i>
+                        <i>🏘️</i> {/* Icona per le relazioni comunitarie */}
+                        <span>Relazioni Comunitarie</span>
                     </a>
-                        
                  </li>  
                  <li>
                     <a href='#'>
-                        <i className="bi bi-bullseye">
-                            <span>Objectives</span>
-                        </i>
+                        <i>🎯</i> {/* Icona per gli obiettivi */}
+                        <span>Obiettivi</span>
                     </a>                    
                  </li>    
                 </ul>
-
             </li>
 
+            {/* Governance Section with Intro Page */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#governance-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i className="bi bi-people-fill bi-menu-button-wide"></i>
+                    <i>🏛️</i> {/* Icona per la sezione Governance */}
                     <span>Governance</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -143,45 +141,42 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <a href='#'>
-                        <i className="bi bi-buildings-fill">
-                            <span>Board Structure</span>
-                        </i>
-                    </a>                       
+                    <Link to='/Governance'>
+                        <i>📜</i> {/* Icona di introduzione per Governance */}
+                        <span>Introduzione</span>
+                    </Link>                       
                  </li>
-                 
                  <li>
                     <a href='#'>
-                        <i className="bi bi-feather">
-                            <span>Ethics & Compliance</span>
-                        </i>
+                        <i>🏢</i> {/* Icona per la struttura del consiglio */}
+                        <span>Struttura del CDA</span>
+                    </a>                       
+                 </li>
+                 <li>
+                    <a href='#'>
+                        <i>⚖️</i> {/* Icona per etica e conformità */}
+                        <span>Etica e Conformità</span>
                     </a> 
                  </li>
                  <li>
                     <a href='#'>
-                        <i className="bi bi-exclamation-diamond-fill">
-                            <span>Risk Management</span>
-                        </i>
+                        <i>🔒</i> {/* Icona per la gestione del rischio */}
+                        <span>Gestione del Rischio</span>
                     </a>
-                        
                  </li>                   
                  <li>
                     <a href='#'>
-                        <i className="bi bi-currency-euro">
-                            <span>Compensation & Incentives</span>
-                        </i>
+                        <i>💶</i> {/* Icona per compensi e incentivi */}
+                        <span>Compensi e Incentivi</span>
                     </a>
-                        
                  </li>  
                  <li>
                     <a href='#'>
-                        <i className="bi bi-transparency">
-                            <span>Transparency & Communication</span>
-                        </i>
+                        <i>📢</i> {/* Icona per trasparenza e comunicazione */}
+                        <span>Trasparenza e Comunicazione</span>
                     </a>                    
                  </li>    
                 </ul>
-
             </li>
         </ul>
     </aside>

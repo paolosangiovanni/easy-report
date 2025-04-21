@@ -8,7 +8,7 @@ function Logo() {
  <div className='d-flex align-items-center justif'>
     <a href='/' className='logo d-flex align-items-center'>
     {/*<img src='' alt=''/>*/}
-    <span className='d-none d-lg-block'>EasyReport</span>
+    <span className='d-none d-lg-block'>ENAV Report</span>
     </a>
     <i 
     className='bi bi-list toggle-sidebar-btn'

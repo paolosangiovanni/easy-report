@@ -38,11 +38,7 @@ const InnovazioneTecnologica = () => {
 
           {/* Card interattive per le varie innovazioni */}
           <div className="cards-container">
-            <div className="card" onClick={() => openModal('infrastructure')}>
-              <h3>🔧 Innovazione delle Infrastrutture</h3>
-              <p>Scopri come ENAV sta modernizzando le infrastrutture per una navigazione più sicura e sostenibile.</p>
-              <button className={`modal-btn ${activeModal === 'infrastructure' ? 'open' : ''}`}>&#43;</button>
-            </div>
+
 
             <div className="card" onClick={() => openModal('platforms')}>
               <h3>📶 Interoperabilità delle Piattaforme</h3>
@@ -82,7 +78,6 @@ const InnovazioneTecnologica = () => {
               <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <button className="modal-close" onClick={closeModal}>×</button>
                 <h3>
-                  {activeModal === 'infrastructure' && '🔧 Innovazione delle Infrastrutture'}
                   {activeModal === 'platforms' && '📶 Interoperabilità delle Piattaforme'}
                   {activeModal === 'remote' && '📡 Remote Tower'}
                   {activeModal === 'satellite' && '🌍 Digitalizzazione delle comunicazioni'}
@@ -90,7 +85,6 @@ const InnovazioneTecnologica = () => {
                   {activeModal === 'AIREON' && '🛰️ Sorveglianza satellitare - AIREON'}
                 </h3>
                 <p>
-                  {activeModal === 'infrastructure' && 'ENAV sta investendo nella modernizzazione delle proprie infrastrutture, partecipando a programmi sperimentali per l’implementazione di procedure di volo basate su sistemi di Navigazione Satellitare, programmi che hanno consentito la navigazione Free Route e che – insieme alle nuove tecniche di disegno delle procedure operative(PBN) – stanno già permettendo ad ENAV di dismettere infrastrutture terrestri di navigazione.'}
                   {activeModal === 'platforms' && 'La gestione del traffico aereo necessita di essere fluida ed efficiente anche a livello sovranazionale. Per questa ragione diversi soggetti (service provider, compagnie aeree, società di gestione aeroportuale, enti militari) devono poter condividere i propri dati in tempo reale al fine di cooperare agevolmente nella gestione dei voli. COFLIGHT: sistema sviluppato con la francese DSNA, permetterà di migliorare ulteriormente il sistema di automazione delle operazioni. Grazie all’innovazione e alla costante professionalizzazione delle risorse, il Gruppo ENAV, primo tra i Service Provider europei, ha rivoluzionato la modalità di attraversamento dello spazio aereo del nostro Paese. Oltre le attività già descritte (in particolare il suddetto Free Route), il Gruppo ENAV sta lavorando ad altri progetti innovativi che rivoluzioneranno il settore, quali ad esempio il concetto di Virtual Centre per la delega dei servizi ATS tra centri ATC e per la gestione delle situazioni di contingency, il tool di Conflict Detection & Resolution innovativi basati sull’utilizzo dei dati di bordo e logiche basate sull’intelligenza artificiale, sistemi per la configurazione dinamica dello spazio aereo in accordo alla domanda di traffico. Ciascuna di queste soluzioni è caratterizzata da un importante impatto sulle performance ATM in chiave green.'}
                   {activeModal === 'remote' && 'Il traffico aereo degli aeroporti a minore densità verrà gestito da torri di controllo remote che saranno concentrate in due centri di controllo a livello nazionale. In questo modo gli scali potranno operare 24 ore al giorno con minore impegno delle risorse e dell’energia, aprendosi alle esigenze di flessibilità delle compagnie aeree e rendendo così più attrattivo il sistema Paese. In tal senso, già nel corso del 2022, è stata messa in operazione la prima Remote Tower in Italia presso l’aeroporto di Brindisi. Inoltre, nell’ambito del programma SESAR, sono state condotte delle attività di ricerca sul Remote Tower centre e Multiple Remote Tower Operations.'}
                   {activeModal === 'satellite' && 'Sostituzione delle comunicazioni cartacee nelle torri con informazioni visualizzate in tempo reale nello schermo radar della propria postazione (EFS – Electronic Flight Strips). Inoltre, con il nuovo sistema Datalink, la comunicazione digitale e quella tradizionale – radio terra / bordo / terra – si integrano e ciò consente di ridurre il rischio di incomprensione nelle comunicazioni radio tra controllori e piloti. ENAV collabora anche all’evoluzione del datalink attraverso le attività di sviluppo della costellazione satellitare del sistema IRIS che trasmetterà i messaggi datalink via satellite.'}
@@ -104,7 +98,7 @@ const InnovazioneTecnologica = () => {
 
           {/* Link alla sezione successiva */}
           <div className="next-section">
-            <p>Per scoprire di più sugli investimenti del Gruppo <strong>ENAV</strong>, vedi la sezione successiva.</p>
+            <p>Per scoprire di più sugli <strong>Investimenti</strong> del Gruppo <strong>ENAV</strong>, vedi la sezione successiva.</p>
             <Link to="/Enviroment/Investimenti" className="arrow-link" >
               <button className="down-arrow-btn" onClick={scrollToTop}>↓</button>
             </Link>

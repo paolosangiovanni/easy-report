@@ -1,0 +1,150 @@
+/* Contenitore principale per la pagina degli investimenti per la sostenibilità */
+.investimenti-sostenibilita {
+    padding: 40px 24px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Titolo della pagina */
+  .investimenti-sostenibilita h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .investimenti-sostenibilita h3 {
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+  }
+  
+  /* Sezione descrizione */
+  .description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Contenitore per le card delle varie sezioni sugli investimenti */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 430px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Pulsante per aprire i modali */
+  .modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-btn.open {
+    transform: rotate(45deg);
+    color: #0c965f;
+  }
+  
+  /* Modale per informazioni dettagliate */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #045937;
+  }
+  
+  /* Pulsante per la sezione successiva */
+  .next-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .down-arrow-btn {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #0c965f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.down-arrow-btn:hover {
+    background-color: #045937;
+    transition: background-color 0.3s ease;
+}
+  
+  .arrow-link {
+    text-decoration: none;
+  }
+  

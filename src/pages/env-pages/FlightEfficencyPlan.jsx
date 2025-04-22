@@ -167,7 +167,7 @@ const FlightEfficiencyPlan = () => {
           </div>
           {/* Sezione con il link alla sezione FEP e FRA */}
           <div className="next-section">
-            <p>Per approfondire L’impegno per la <strong>decarbonizzazione delle attività del Gruppo ENAV</strong>, vedi la sezione successiva relativa alla <strong>Carbon Footprint</strong> del Gruppo.</p>
+            <p>Per approfondire L’impegno per la <strong>decarbonizzazione delle attività del Gruppo ENAV</strong>, vedi la sezione successiva.</p>
             <Link to="/Enviroment/CarbonFootprint" className="arrow-link" onClick={scrollToTop}>
               <button className="down-arrow-btn">↓</button>
             </Link>

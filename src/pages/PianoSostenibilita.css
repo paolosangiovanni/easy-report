@@ -1,0 +1,152 @@
+/* Container principale */
+.piano-sostenibilita-section {
+    padding: 40px 24px;
+    background-color: #ffffff;
+  }
+  
+  .piano-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Heading principali */
+  .piano-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+  }
+  /* H3 stile gradient come piano-heading */
+.sostenibilita-subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+  }
+  
+  /* H4 stile gradient */
+  .sostenibilita-subsubheading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+  }
+  
+  
+  .piano-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  /* Griglia delle card */
+  .pillars-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  
+  /* Singola card */
+  .pillar-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 24px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pillar-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Titolo della card */
+  .pillar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #045937;
+    margin-bottom: 12px;
+  }
+  
+  /* Stato target (es. "12/12 Target Raggiunti") */
+  .pillar-targets {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  /* Pulsante "Scopri di più" */
+  .pillar-button {
+    background-color: #0c965f;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .pillar-button:hover {
+    background-color: #045937;
+  }
+  
+  /* Modale */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #045937;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .pillar-card {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+  

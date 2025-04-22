@@ -18,31 +18,67 @@ import Layout from './components/Layout';
 
 //import ReactRouter
 import { createBrowserRouter, RouterProvider,  } from 'react-router-dom';
+
+//Import Costanti Homepage
 import Overview from './pages/Overview';
 import ErrorPage from './pages/ErrorPage';
 
-//import Costants for Enviroment
+//Import Costanti per Piano Sostenibilità 21-24
+
+import PianoSostenibilita from './pages/PianoSostenibilita';
+
+//Import Costanti per Piano Sostenibilità 21-24
+
+import PanoramicaESG from './pages/PanoramicaESG';
+
+//Import Costanti per Download Report
+
+import DownloadReport from './pages/DownloandReport';
+
+//Import Costanti per Intro
+import EnviromentIntro from './pages/env-pages/EnvironmentIntro.jsx';
+import SocialIntro from './pages/soc-pages/SocialIntro.jsx';
+import GovernanceIntro from './pages/gov-pages/GovernanceIntro.jsx';
+
+//import Costanti per Enviroment
 import './data/route_costants.js';
 import FlightEfficencyplan from './pages/env-pages/FlightEfficencyPlan.jsx';
 import CarbonFootprint from './pages/env-pages/CarbonFootprint.jsx';
 import InnovazioneTecnologica from './pages/env-pages/InnovazioneTecnologica.jsx';
 import Investimenti from './pages/env-pages/Investimenti.jsx';
-import Obiettivi from './pages/env-pages/Objectives.jsx';
+import Obiettivi from './pages/env-pages/Obiettivi.jsx';
 
 
 
 
-//Import Costants for Intros
-import EnviromentIntro from './pages/env-pages/EnvironmentIntro.jsx';
-import SocialIntro from './pages/soc-pages/SocialIntro.jsx';
-import GovernanceIntro from './pages/gov-pages/GovernanceIntro.jsx';
 
 const router = createBrowserRouter([
+
+  //Home / Panoramica ENAV
   {
     path:'/',
     element: <><Layout/><Overview/></>,
     errorElement: <ErrorPage/>
   },
+
+  // Piano Sostenibilità 21-24
+  {
+    path:'/PianoSostenibilita',
+    element: <><Layout/><PianoSostenibilita/></>,
+  },
+  // Panoramica ESG
+  {
+    path:'/PanoramicaESG',
+    element: <><Layout/><PanoramicaESG/></>,
+  },
+
+  //Download Report
+
+  {
+    path:'/DownloadReport',
+    element: <><Layout/><DownloadReport/></>,
+  },
+
   //Intro page
   {
     path: '/Enviroment',
@@ -56,6 +92,7 @@ const router = createBrowserRouter([
     path: '/Governance',
     element: <><Layout /><GovernanceIntro /></>,
   },
+
 
   //Sottopagine Enviromennt
 

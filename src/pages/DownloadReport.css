@@ -1,0 +1,67 @@
+/* Contenitore principale */
+.main-content {
+    background-color: #ffffff;
+    min-height: 100vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Titolo principale */
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  /* Card per i report */
+  .report-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .report-card {
+    width: 300px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .report-img {
+    width: 100%;
+    height: auto;    
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .report-card a {
+    display: block;
+    margin-top: 10px;
+    background-color: #0c965f;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+  }
+  
+  .report-card a:hover {
+    background-color: #045937;
+  }
+  

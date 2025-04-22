@@ -98,6 +98,22 @@
     font-weight: 700;
 }
 
+.down-arrow-btn {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #0c965f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+
+.down-arrow-btn:hover {
+    background-color: #045937;
+    transition: background-color 0.3s ease;
+}
+
 /* Responsivo per schermi più piccoli */
 @media (max-width: 768px) {
     .chart-card {

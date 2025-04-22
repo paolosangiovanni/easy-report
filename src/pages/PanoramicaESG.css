@@ -1,0 +1,182 @@
+/* CSS per la sezione ESG */
+.page-content {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .main-content {
+    min-height: 100vh;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  /* Sezione Impegni ESG */
+  .esg-section {
+    width: 100%;
+  }
+  
+  .esg-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .esg-heading, .esg-subheading {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 16px;
+  }
+  
+  .esg-pillars {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pillar {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    flex: 1 1 300px; /* Cambiato qui: flessibile da 300px in su */
+    max-width: 400px; /* Limite massimo */
+    cursor: pointer;
+    box-sizing: border-box; /* Aggiunto per evitare overflow di padding */
+    transition: transform 0.3s ease;
+  }
+  
+  .pillar:hover {
+    transform: translateY(-5px);
+  }
+  
+  .pillar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #045937;
+    margin-bottom: 8px;
+  }
+  
+  .pillar-title.open::after {
+    content: ' ×';
+    color: #045937;
+  }
+  
+  .pillar-title::after {
+    content: ' +';
+    color: #0c965f;
+  }
+  
+  .esg-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+  }
+  
+  .esg-link-btn {
+    padding: 12px 20px;
+    background-color: #0c965f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 250px;
+  }
+  
+  .esg-link-btn:hover {
+    background-color: #045937;
+    color: #ffffff;
+  }
+  
+  /* Modali per i pilastri ESG */
+  .esg-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .esg-modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #045937;
+  }
+  
+  /* Grafici ESG */
+  .esg-charts-section {
+    width: 100%;
+
+  }
+  
+  .esg-charts-container {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .chart-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .chart-description {
+    margin-bottom: 16px;
+  }
+
+  
+  
+  /* Responsività */
+  @media (max-width: 1024px) {
+    .esg-charts-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .chart-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  

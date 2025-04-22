@@ -14,6 +14,20 @@ function SideBar() {
                 </Link>
             </li>
 
+            <li className='nav-item'>
+                <Link to='/PianoSostenibilita' className='nav-link'>
+                 <i>♻️</i>
+                 <span>Piano Sostenibilità 2021/2024</span>
+                </Link>
+            </li>
+
+            <li className='nav-item'>
+                <Link to='/PanoramicaESG' className='nav-link'>
+                 <i>☀️</i>
+                 <span>Panoramica ESG</span>
+                </Link>
+            </li>
+
             {/* Environment Section with Intro Page */}
             <li className='nav-item'>
                 <a 
@@ -178,6 +192,14 @@ function SideBar() {
                  </li>    
                 </ul>
             </li>
+            {/* Sezione Dowload report */}
+            <li className='nav-item'>
+                <Link to='/DownloadReport' className='nav-link'>
+                 <i>📥</i>
+                 <span>Scarica Report Sostenibilità</span>
+                </Link>
+            </li>
+
         </ul>
     </aside>
   )

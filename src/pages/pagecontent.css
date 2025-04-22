@@ -9,3 +9,12 @@
         padding: 20px;
      }
 }
+/*  */
+.main-content {
+    padding: 40px 24px;
+    background-color: #ffffff; /* Sfondo leggero */
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+     /* Aggiunto per centrare tutto il contenuto */
+}

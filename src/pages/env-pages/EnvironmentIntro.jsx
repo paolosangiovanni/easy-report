@@ -68,13 +68,13 @@ function EnviromentIntro() {
           <div className="commitment-canva">
             <div className="canva-container">
               <div className="canva-inner">
-                <div className="circle1">
+                <div className="circle circle1">
                   <span>Innovazione tecnologica e sostenibilità ambientale 🌱</span>
                 </div>
-                <div className="circle2">
+                <div className="circle circle2">
                   <span>Riduzione dell’impatto ambientale 🌍</span>
                 </div>
-                <div className="circle3">
+                <div className="circle circle3">
                   <span>Airspace user più efficienti e sostenibili ✈️</span>
                 </div>
               </div>

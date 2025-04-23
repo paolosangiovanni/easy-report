@@ -106,7 +106,7 @@ function SideBar() {
                  </li>
                  <li>
                     <a href='#'>
-                        <i>⚖️</i> {/* Icona per la diversità e l'inclusione */}
+                        <i>🌈</i> {/* Icona per la diversità e l'inclusione */}
                         <span>Diversità e Inclusione</span>
                     </a>                       
                  </li>

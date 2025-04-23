@@ -54,6 +54,7 @@
     cursor: pointer;
     box-sizing: border-box; /* Aggiunto per evitare overflow di padding */
     transition: transform 0.3s ease;
+    
   }
   
   .pillar:hover {

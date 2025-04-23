@@ -1,0 +1,208 @@
+/* Container principale per la pagina SocialIntro */
+.social-intro-content {
+    padding: 40px 24px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Titolo principale */
+.social-intro-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+}
+
+.social-intro-content h3 {
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    text-align: left;
+    margin-top: 40px;
+}
+
+/* Descrizione introduttiva */
+.social-intro-description p, .social-intro-description ul li {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.social-intro-description ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social-intro-description ul li strong {
+    color: #0c965f;
+    font-size: 1.1rem;
+}
+
+/* Canva delle aree sociali */
+.social-areas-canva {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-areas-container {
+    width: 100%;
+    background-color: #e9f5f0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.social-areas-inner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.social-area-card {
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+}
+
+.social-area-card .area-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+/* Modali */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #045937;
+}
+
+/* Modale toggle button */
+.modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-btn.open {
+    transform: rotate(45deg);
+    color: #045937;
+}
+
+/* Iniziative sociali grid */
+.social-initiatives-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.social-initiative-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 24px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.social-initiative-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Pulsante sezione successiva */
+.next-section {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.next-section p {
+    margin-bottom: 20px;
+}
+
+.arrow-link {
+    text-decoration: none;
+}
+
+.down-arrow-btn {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #0c965f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.down-arrow-btn:hover {
+    background-color: #045937;
+    transition: background-color 0.3s ease;
+}

@@ -122,29 +122,48 @@
     color: #045937;
   }
   
-  /* Pulsante per la sezione successiva */
-  .next-section {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .down-arrow-btn {
-    font-size: 2rem;
-    padding: 10px 20px;
-    background-color: #0c965f;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    
+/* bottini per la sezione successiva */
+
+/* Wrapper per descrizione e bottoni */
+.esg-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
 }
 
-.down-arrow-btn:hover {
-    background-color: #045937;
-    transition: background-color 0.3s ease;
+/* Descrizione sopra i bottoni */
+.esg-links-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
 }
-  
-  .arrow-link {
-    text-decoration: none;
-  }
-  
+
+/* Contenitore dei bottoni */
+.esg-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top:  0px;
+}
+
+/* Stile dei bottoni */
+.esg-link-btn {
+  padding: 12px 20px;
+  background-color: #0c965f;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 250px;
+}
+
+.esg-link-btn:hover {
+  background-color: #045937;
+}

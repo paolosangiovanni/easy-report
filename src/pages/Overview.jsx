@@ -23,9 +23,9 @@ function Overview() {
       <div className='main-content'>
         <section className="enav-section">
           <div className="enav-container">
-            <h2 className="enav-heading">Chi è ENAV ?</h2>
+            <h2 className="enav-heading">Chi è ENAV <img src="https://companieslogo.com/img/orig/ENAV.MI-2a8230ae.png?t=1720244491" alt="ENAV" className="group-logo" /> ?</h2>
             <p className="enav-text">
-              <strong>ENAV S.p.A.</strong> è la società italiana responsabile della gestione e del controllo del traffico aereo civile, operante su tutto il territorio nazionale. Gestisce oltre <strong>2 milioni di voli all’anno</strong> e garantisce la sicurezza, efficienza e regolarità della navigazione aerea nello spazio aereo italiano.
+              <strong>ENAV S.p.A.</strong>  è la società italiana responsabile della gestione e del controllo del traffico aereo civile, operante su tutto il territorio nazionale. Gestisce oltre <strong>2 milioni di voli all’anno</strong> e garantisce la sicurezza, efficienza e regolarità della navigazione aerea nello spazio aereo italiano.
             </p>
             <p className="enav-text">
               ENAV è quotata alla Borsa di Milano (Euronext Milan) ed è tra le poche società di Air Navigation Service Provider (ANSP) al mondo ad avere un modello <strong>completamente liberalizzato</strong>, operando secondo logiche industriali e concorrenziali.

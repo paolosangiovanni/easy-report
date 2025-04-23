@@ -58,6 +58,7 @@ const Investimenti = () => {
             <div className="chart-card">
               <Bar data={investimentiData} />
             </div>
+            
           </div>
 
           <h3>Le Aree di Investimento</h3>
@@ -108,13 +109,18 @@ const Investimenti = () => {
             </div>
           )}
 
-          {/* Link alla sezione successiva */}
-          <div className="next-section">
-            <p>Per scoprire di più sugli <strong>Obiettivi</strong> del Gruppo ENAV, vedi la sezione successiva.</p>
-            <Link to="/Enviroment/Obiettivi" className="arrow-link">
-              <button className="down-arrow-btn" onClick={scrollToTop}>↓</button>
-            </Link>
-          </div>
+
+            <div className="esg-links-wrapper">
+              <div className="esg-links-description">
+                <p>Esplora gli altri ambiti <strong>ESG</strong> oppure torna alla Home 🏠</p>
+              </div>
+              <div className="esg-links">
+                <Link to="/Social" className="esg-link-btn" onClick={scrollToTop}>👥 Vai alla sezione Sociale</Link>
+                <Link to="/Governance" className="esg-link-btn" onClick={scrollToTop}>🏛️ Vai alla sezione Governance</Link>
+                <Link to="/" className="esg-link-btn" onClick={scrollToTop}>🏠 Vai alla Home</Link>
+              </div>
+            </div>
+            
         </div>
       </div>
     </div>

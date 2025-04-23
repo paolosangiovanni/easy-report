@@ -37,7 +37,7 @@ function EnviromentIntro() {
               <li><strong>Airspace user più efficienti e sostenibili ✈️</strong></li>
             </ul>
             <p>
-              I progetti strategici come il <strong>Flight Efficiency Plan (FEP)</strong>, <strong>Free Route Airspace Italy (FRAIT)</strong>, e l'<strong>Airport Collaborative Decision Maker (A-CDM)</strong> sono essenziali per il raggiungimento degli obiettivi ambientali.
+              I progetti strategici come il <strong>Flight Efficiency Plan (FEP)</strong> e il <strong>Free Route Airspace Italy (FRAIT)</strong> sono essenziali per il raggiungimento degli obiettivi ambientali.
             </p>
           </div>
 

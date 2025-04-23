@@ -46,7 +46,6 @@ import FlightEfficencyplan from './pages/env-pages/FlightEfficencyPlan.jsx';
 import CarbonFootprint from './pages/env-pages/CarbonFootprint.jsx';
 import InnovazioneTecnologica from './pages/env-pages/InnovazioneTecnologica.jsx';
 import Investimenti from './pages/env-pages/Investimenti.jsx';
-import Obiettivi from './pages/env-pages/Obiettivi.jsx';
 
 
 
@@ -112,11 +111,7 @@ const router = createBrowserRouter([
     path:'/Enviroment/Investimenti',
     element: <><Layout/> <Investimenti/></>,
   },
-  {
-    path:'/Enviroment/Obiettivi',
-    element: <><Layout/> <Obiettivi/></>,
-  }
-  
+
 ])
 
 

@@ -197,6 +197,12 @@
   margin-bottom: 12px;
 }
 
+.group-logo {
+  width: 50px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
 .subsidiary-title {
   font-size: 1.1rem;
   font-weight: bold;

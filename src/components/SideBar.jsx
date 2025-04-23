@@ -3,26 +3,31 @@ import React from 'react'
 import './sideBar.css';
 import { Link } from 'react-router-dom'; // Usa Link di react-router-dom per la navigazione
 
+    // Funzione per scrollare in cima
+    const scrollToTop = () => {
+        window.scrollTo(0, 0);
+      };
+
 function SideBar() {
   return (
     <aside id='sidebar' className='sidebar'>
         <ul className='sidebar-nav' id='sidebar-nav'>
             <li className='nav-item'>
-                <Link to='/' className='nav-link'>
+                <Link to='/' className='nav-link' onClick={scrollToTop}>
                  <i>🏠</i>
                  <span>Panoramica ENAV</span>
                 </Link>
             </li>
 
             <li className='nav-item'>
-                <Link to='/PianoSostenibilita' className='nav-link'>
+                <Link to='/PianoSostenibilita' className='nav-link' onClick={scrollToTop}>
                  <i>♻️</i>
                  <span>Piano Sostenibilità 2021/2024</span>
                 </Link>
             </li>
 
             <li className='nav-item'>
-                <Link to='/PanoramicaESG' className='nav-link'>
+                <Link to='/PanoramicaESG' className='nav-link' onClick={scrollToTop}>
                  <i>☀️</i>
                  <span>Panoramica ESG</span>
                 </Link>
@@ -45,40 +50,34 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <Link to='/Enviroment'>
+                    <Link to='/Enviroment' onClick={scrollToTop}>
                         <i>📜</i> {/* Icona di introduzione */}
                         <span>Introduzione</span>
                     </Link>                       
                  </li>
                  <li>
-                    <Link to='/Enviroment/FEP&FRA'>
+                    <Link to='/Enviroment/FEP&FRA' onClick={scrollToTop}>
                         <i>✈️</i> {/* Icona per il piano di efficienza */}
                         <span>Flight Efficiency Plan & FRA</span>
                     </Link>                       
                  </li>
                  <li>
-                    <Link to='/Enviroment/CarbonFootprint'>
+                    <Link to='/Enviroment/CarbonFootprint' onClick={scrollToTop}>
                         <i>🌳</i> {/* Icona per l'impronta di carbonio */}
                         <span>Carbon Footprint</span>
                     </Link> 
                  </li>
                  <li>
-                    <Link to='/Enviroment/InnovazioneTecnologica'>
+                    <Link to='/Enviroment/InnovazioneTecnologica' onClick={scrollToTop}>
                         <i>🌐</i> {/* Icona per il consumo di energia */}
                         <span>Innovazione Tecnologica</span>
                     </Link>
                  </li>                   
                  <li>
-                    <Link to='/Enviroment/Investimenti'>
+                    <Link to='/Enviroment/Investimenti' onClick={scrollToTop}>
                         <i>📈</i> {/* Icona per gli investimenti */}
                         <span>Investimenti</span>
                     </Link>
-                 </li>  
-                 <li>
-                    <Link to='/Enviroment/Obiettivi'>
-                        <i>🎯</i> {/* Icona per gli obiettivi */}
-                        <span>Obiettivi</span>
-                    </Link>                    
                  </li>    
                 </ul>
             </li>
@@ -100,7 +99,7 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <Link to='/Social'>
+                    <Link to='/Social' onClick={scrollToTop}>
                         <i>📜</i> {/* Icona di introduzione per Social */}
                         <span>Introduzione</span>
                     </Link>                       
@@ -128,13 +127,7 @@ function SideBar() {
                         <i>🏘️</i> {/* Icona per le relazioni comunitarie */}
                         <span>Relazioni Comunitarie</span>
                     </a>
-                 </li>  
-                 <li>
-                    <a href='#'>
-                        <i>🎯</i> {/* Icona per gli obiettivi */}
-                        <span>Obiettivi</span>
-                    </a>                    
-                 </li>    
+                 </li>     
                 </ul>
             </li>
 
@@ -155,7 +148,7 @@ function SideBar() {
                     data-bs-parent='#sidebar-nav'             
                 >
                  <li>
-                    <Link to='/Governance'>
+                    <Link to='/Governance' onClick={scrollToTop}>
                         <i>📜</i> {/* Icona di introduzione per Governance */}
                         <span>Introduzione</span>
                     </Link>                       
@@ -194,7 +187,7 @@ function SideBar() {
             </li>
             {/* Sezione Dowload report */}
             <li className='nav-item'>
-                <Link to='/DownloadReport' className='nav-link'>
+                <Link to='/DownloadReport' className='nav-link' onClick={scrollToTop}>
                  <i>📥</i>
                  <span>Scarica Report Sostenibilità</span>
                 </Link>

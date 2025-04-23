@@ -82,7 +82,7 @@ const CarbonFootprint = () => {
     <div id="main" className="page-content">
       <div className="main-content">
         <div className="carbon-footprint">
-          <h2>🌍 Carbon Footprint del Gruppo ENAV</h2>
+          <h2>🌳 Carbon Footprint del Gruppo ENAV</h2>
           <div className="description">
             <p>
               Il Gruppo ENAV ha fatto progressi significativi nella lotta contro i cambiamenti climatici, impegnandosi per la

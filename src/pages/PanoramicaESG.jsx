@@ -72,8 +72,20 @@ const PanoramicaESG = () => {
             <div className="esg-container">
               <h3 className="esg-subheading">Impegni ESG</h3>
               <p className="esg-text">
-                La strategia ESG di ENAV si fonda su tre pilastri principali, ciascuno dei quali riflette il nostro impegno verso un futuro più sostenibile, inclusivo ed etico.
+                <strong>ENAV</strong> ha strutturato il proprio <strong>Piano di Sostenibilità 2021-2024</strong> attorno a sei pilastri fondamentali:
               </p>
+              <ul>
+                <li><strong>Strategie e Governance</strong></li>
+                <li><strong>Politiche aziendali</strong></li>
+                <li><strong>Innovazione tecnologica</strong></li>
+                <li><strong>Reporting e comunicazione</strong></li>
+                <li><strong>Cultura aziendale</strong></li>
+                <li><strong>Climate change</strong></li>
+              </ul>
+              <p>
+                Per l'analisi e la rendicontazione nel <strong>Bilancio di Sostenibilità 2023</strong>, questi sei pilastri sono stati raggruppati secondo i tre ambiti principali della strategia <strong>ESG</strong>:
+              </p>
+
 
               <div className="esg-pillars">
                 <div className="pillar" onClick={() => openModal('environment')}>
@@ -93,10 +105,7 @@ const PanoramicaESG = () => {
 
 
               </div>
-              <p>
-              <br></br>
-                <strong>Considerato da tempo tra i “big five” europei per performance operative e innovazione,</strong> il Gruppo ENAV è oggi in prima linea a sostegno dell’ambiente grazie alla costante ottimizzazione delle rotte per ridurre i consumi degli aerei e all’utilizzo di tecnologie innovative per migliorare l’efficienza delle proprie infrastrutture.
-              </p>
+              
               {/* Modali ESG */}
               {activeModal === 'environment' && (
                 <div className="esg-modal-overlay" onClick={closeModal}>
@@ -160,7 +169,7 @@ const PanoramicaESG = () => {
             <h3 className="esg-heading">Performance ESG 2023</h3>
             
             <p className="esg-description">
-        I grafici seguenti mostrano i principali impegni di ENAV nei tre pilastri della sostenibilità: <strong>Ambiente</strong>, <strong>Sociale</strong> e <strong>Governance</strong>. Questi dati sono rappresentativi degli sforzi messi in atto da ENAV per ridurre l'impatto ambientale, favorire il benessere dei propri dipendenti e garantire un alto livello di trasparenza e indipendenza nella governance aziendale.
+        I grafici seguenti mostrano i principali impegni di ENAV nei tre ambiti della sostenibilità: <strong>Ambiente</strong>, <strong>Sociale</strong> e <strong>Governance</strong>. Questi dati sono rappresentativi degli sforzi messi in atto da ENAV per ridurre l'impatto ambientale, favorire il benessere dei propri dipendenti e garantire un alto livello di trasparenza e indipendenza nella governance aziendale.
       </p>
             <div className="esg-charts-container">
               <div className="chart-card">

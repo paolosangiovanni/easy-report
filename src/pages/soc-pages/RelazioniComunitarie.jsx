@@ -82,11 +82,12 @@ function RelazioniComunitarie() {
 
             <div className="relazionicom-links-wrapper">
               <div className="relazionicom-links-description">
-                <p>Esplora gli altri ambiti <strong>ESG</strong> oppure torna alla Home 🏠</p>
+              <p>Esplora gli altri ambiti <strong>ESG</strong>🌿🏛️, <strong>Scarica il report 📥</strong> oppure torna alla <strong>Home</strong> 🏠</p>
               </div>
               <div className="relazionicom-links">
+                <Link to="/Enviroment" className="relazionicom-link-btn" onClick={scrollToTop}>🌿 Vai alla sezione Enviroment</Link>
                 <Link to="/Governance" className="relazionicom-link-btn" onClick={scrollToTop}>🏛️ Vai alla sezione Governance</Link>
-                <Link to="/Social" className="relazionicom-link-btn" onClick={scrollToTop}>👥 Vai alla sezione Sociale</Link>
+                <Link to="/DownloadReport" className="trasp-link-btn" onClick={scrollToTop}>📥 Vai alla sezione Scarica il report</Link>
                 <Link to="/" className="relazionicom-link-btn" onClick={scrollToTop}>🏠 Vai alla Home</Link>
               </div>
             </div>

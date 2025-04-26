@@ -1,14 +1,14 @@
-/* Container principale per GovernanceIntro */
-.governance-intro-content {
-    padding: 40px 24px;
+/* Container principale */
+.risk-content {
     background-color: #ffffff;
+    padding: 40px 24px;
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 10px;
     text-align: left;
   }
   
-  .governance-intro-content h2, .governance-intro-content h3 {
+  .risk-content h2, .risk-content h3 {
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(to right, #0c965f, #045937);
@@ -18,58 +18,58 @@
     text-align: left;
   }
   
-  .governance-intro-content h3 {
+  .risk-content h3 {
     font-size: 1.8rem;
     margin-top: 40px;
   }
   
   /* Descrizione introduttiva */
-  .governance-intro-description p {
+  .risk-description p {
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
     margin-bottom: 24px;
   }
   
-  /* Principi di Corporate Governance */
-  .governance-principles {
+  /* Card dei rischi */
+  .risk-cards {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 30px;
   }
   
-  .principle-card {
+  .risk-graph-card {
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 16px;
     padding: 24px;
     width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
-  .principle-card:hover {
+  .risk-graph-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .principle-card h4 {
+  .risk-graph-card h4 {
     color: #045937;
     font-size: 1.3rem;
     margin-bottom: 10px;
   }
   
-  .principle-card p {
+  .risk-graph-card p {
     font-size: 1rem;
     color: #333;
     line-height: 1.5;
   }
   
-  /* Canva delle macroaree */
-  .relazioni-canva {
+  /* Modali */
+  .risk-modals {
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -77,9 +77,8 @@
     margin-top: 30px;
   }
   
-  .relazioni-canva-item {
+  .risk-modal-card {
     width: 280px;
-    height: 100px;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -90,21 +89,19 @@
     cursor: pointer;
   }
   
-  .relazioni-canva-item:hover {
+  .risk-modal-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
   
-  .relazioni-canva-item h4 {
+  .risk-modal-card h4 {
     color: #045937;
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
-    padding-top: 17px;
   }
   
-  /* Bottoni modali */
-  .relazioni-modal-btn {
+  .risk-modal-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -122,13 +119,12 @@
     align-items: center;
   }
   
-  .relazioni-modal-btn.open {
+  .risk-modal-btn.open {
     transform: rotate(45deg);
     color: #045937;
   }
   
-  /* Modali */
-  .relazioni-modal-overlay {
+  .risk-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -141,7 +137,7 @@
     z-index: 999;
   }
   
-  .relazioni-modal {
+  .risk-modal-content {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 16px;
@@ -151,7 +147,7 @@
     position: relative;
   }
   
-  .relazioni-modal-close {
+  .risk-modal-close {
     position: absolute;
     top: 12px;
     right: 16px;
@@ -169,15 +165,14 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .relazioni-modal-close:hover {
+  .risk-modal-close:hover {
     background-color: #0c965f;
     color: white;
   }
   
-
-  
+  /* Responsive */
   @media (max-width: 768px) {
-    .governance-principles, .relazioni-canva {
+    .risk-cards, .risk-modals {
       flex-direction: column;
       align-items: center;
     }

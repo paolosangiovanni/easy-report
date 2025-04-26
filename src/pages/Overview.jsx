@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './pagecontent.css'
 import './Overview.css'
 
@@ -17,6 +18,10 @@ const stats = [
   { label: 'Installazioni in esercizio operativo ATM', value: '31.181', icon: '🖥️' },
 ];
 
+  // Funzione per scrollare in cima
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 function Overview() {
   return (
     <div id='main' className='page-content'>
@@ -99,6 +104,13 @@ function Overview() {
         
           </div>
         </section>
+                  {/* Link alla sezione successiva */}
+                  <div className="next-section">
+            <p>Per consultare il <strong>Piano di sostenibilità 2021-2024</strong> vedi la sezione successiva ♻️.</p>
+            <Link to="/PianoSostenibilita" className="arrow-link" >
+              <button className="down-arrow-btn" onClick={scrollToTop}>↓</button>
+            </Link>
+          </div>
       </div>
     </div>
   );

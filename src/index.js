@@ -2,7 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 //import icone lib remix e bootstrap
@@ -55,6 +54,13 @@ import BenessereDeiDipendenti from './pages/soc-pages/BenesseredeiDipendenti.jsx
 import RelazioniComunitarie from './pages/soc-pages/RelazioniComunitarie.jsx';
 
 
+//import Costanti per Governance
+import StrutturadelCDA from './pages/gov-pages/StrutturadelCDA.jsx';
+import EticaeConformità from'./pages/gov-pages/EticaeConformità.jsx';
+import GestioneDelRischio from'./pages/gov-pages/GestionedelRischio.jsx';
+import CompensieIncentivi from'./pages/gov-pages/CompensieIncentivi.jsx';
+import TrasparenzaeComunicazione from'./pages/gov-pages/TrasparenzaeComunicazione.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -62,40 +68,40 @@ const router = createBrowserRouter([
   //Home / Panoramica ENAV
   {
     path:'/',
-    element: <><Layout/><Overview/></>,
+    element: <Layout><Overview/></Layout>,
     errorElement: <ErrorPage/>
   },
 
   // Piano Sostenibilità 21-24
   {
     path:'/PianoSostenibilita',
-    element: <><Layout/><PianoSostenibilita/></>,
+    element: <Layout><PianoSostenibilita/></Layout>,
   },
   // Panoramica ESG
   {
     path:'/PanoramicaESG',
-    element: <><Layout/><PanoramicaESG/></>,
+    element: <Layout><PanoramicaESG/></Layout>,
   },
 
   //Download Report
 
   {
     path:'/DownloadReport',
-    element: <><Layout/><DownloadReport/></>,
+    element: <Layout><DownloadReport/></Layout>,
   },
 
   //Intro page
   {
     path: '/Enviroment',
-    element: <><Layout /><EnviromentIntro/></>,
+    element: <Layout><EnviromentIntro/></Layout>,
   },
   {
     path: '/Social',
-    element: <><Layout /><SocialIntro /></>,
+    element: <Layout><SocialIntro /></Layout>,
   },
   {
     path: '/Governance',
-    element: <><Layout /><GovernanceIntro /></>,
+    element: <Layout><GovernanceIntro /></Layout>,
   },
 
 
@@ -103,44 +109,67 @@ const router = createBrowserRouter([
 
   {
     path:'/Enviroment/FEP&FRA',
-    element: <><Layout/> <FlightEfficencyplan/></>,
+    element: <Layout><FlightEfficencyplan/></Layout>,
   },
   {
     path:'/Enviroment/CarbonFootprint',
-    element: <><Layout/> <CarbonFootprint/></>,
+    element: <Layout><CarbonFootprint/></Layout>,
   },
   {
     path:'/Enviroment/InnovazioneTecnologica',
-    element: <><Layout/> <InnovazioneTecnologica/></>,
+    element: <Layout><InnovazioneTecnologica/></Layout>,
   },
   {
     path:'/Enviroment/Investimenti',
-    element: <><Layout/> <Investimenti/></>,
+    element: <Layout><Investimenti/></Layout>,
   },
 
     //Sottopagine Social
 
     {
       path:'/Social/Diversita&Inclusione',
-      element: <><Layout/> <DiversitaEInclusione/></>,
+      element: <Layout><DiversitaEInclusione/></Layout>,
     },
     {
       path:'/Social/SviluppoDeiDipendenti',
-      element: <><Layout/> <SviluppodeiDipendenti/></>,
+      element: <Layout><SviluppodeiDipendenti/></Layout>,
     },
     {
       path:'/Social/Salute&Sicurezza',
-      element: <><Layout/> <SaluteESicurezza/></>,
+      element: <Layout><SaluteESicurezza/></Layout>,
     },
     {
       path:'/Social/BenessereDeiDipendenti',
-      element: <><Layout/> <BenessereDeiDipendenti/></>,
+      element: <Layout><BenessereDeiDipendenti/></Layout>,
     },
     {
       path:'/Social/RelazioniComunitarie',
-      element: <><Layout/> <RelazioniComunitarie/></>,
+      element: <Layout><RelazioniComunitarie/></Layout>,
     },
 
+     //Sottopagine Governance
+
+     {
+      path:'/Governance/StrutturaDelCDA',
+      element: <Layout><StrutturadelCDA/></Layout>,
+    },
+    {
+      path:'/Governance/Etica&Conformita',
+      element: <Layout><EticaeConformità/></Layout>,
+    },
+    {
+      path:'/Governance/GestioneDelRischio',
+      element: <Layout><GestioneDelRischio/></Layout>,
+    },
+    {
+      path:'/Governance/Compensi&Incentivi',
+      element: <Layout><CompensieIncentivi/></Layout>,
+    },
+    {
+      path:'/Governance/Trasparenza&Comunicazione',
+      element: <Layout><TrasparenzaeComunicazione/></Layout>,
+    },
+   
 ])
 
 

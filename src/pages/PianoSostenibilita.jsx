@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './pagecontent.css';
 import './PianoSostenibilita.css';
 
@@ -96,6 +97,12 @@ const pillars = [
   },
 ];
 
+
+  // Funzione per scrollare in cima
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
 function PianoSostenibilita() {
   const [activeModal, setActiveModal] = useState(null);
 
@@ -181,6 +188,14 @@ function PianoSostenibilita() {
             </div>
           </div>
         )}
+
+          {/* Link alla sezione successiva */}
+          <div className="next-section">
+          <p>Vai alla <strong>panoramica ESG</strong> clicca la freccia per vedere la sezione successiva ☀️.</p>
+          <Link to="/PanoramicaESG" className="arrow-link" >
+            <button className="down-arrow-btn" onClick={scrollToTop}>↓</button>
+          </Link>
+          </div>
       </div>
     </div>
   );

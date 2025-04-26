@@ -112,11 +112,12 @@ const Investimenti = () => {
 
             <div className="inv-links-wrapper">
               <div className="inv-links-description">
-                <p>Esplora gli altri ambiti <strong>ESG</strong> oppure torna alla Home 🏠</p>
+              <p>Esplora gli altri ambiti <strong>ESG</strong>👥🏛️, <strong>Scarica il report 📥</strong> oppure torna alla <strong>Home</strong> 🏠</p>
               </div>
               <div className="inv-links">
                 <Link to="/Social" className="inv-link-btn" onClick={scrollToTop}>👥 Vai alla sezione Sociale</Link>
                 <Link to="/Governance" className="inv-link-btn" onClick={scrollToTop}>🏛️ Vai alla sezione Governance</Link>
+                <Link to="/DownloadReport" className="trasp-link-btn" onClick={scrollToTop}>📥 Vai alla sezione Scarica il report</Link>
                 <Link to="/" className="inv-link-btn" onClick={scrollToTop}>🏠 Vai alla Home</Link>
               </div>
             </div>

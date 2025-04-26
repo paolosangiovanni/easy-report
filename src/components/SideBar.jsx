@@ -160,34 +160,34 @@ function SideBar() {
                     </Link>                       
                  </li>
                  <li>
-                    <a href='#'>
+                    <Link to='/Governance/StrutturaDelCDA' onClick={scrollToTop}>
                         <i>🏢</i> {/* Icona per la struttura del consiglio */}
                         <span>Struttura del CDA</span>
-                    </a>                       
+                    </Link>                       
                  </li>
                  <li>
-                    <a href='#'>
+                    <Link to='/Governance/Etica&Conformita' onClick={scrollToTop}>
                         <i>⚖️</i> {/* Icona per etica e conformità */}
-                        <span>Etica e Conformità</span>
-                    </a> 
+                        <span>Etica & Conformità</span>
+                    </Link> 
                  </li>
                  <li>
-                    <a href='#'>
+                 <Link to='/Governance/GestioneDelRischio' onClick={scrollToTop}>
                         <i>🔒</i> {/* Icona per la gestione del rischio */}
                         <span>Gestione del Rischio</span>
-                    </a>
+                    </Link>
                  </li>                   
                  <li>
-                    <a href='#'>
+                 <Link to='/Governance/Compensi&Incentivi' onClick={scrollToTop}>
                         <i>💶</i> {/* Icona per compensi e incentivi */}
-                        <span>Compensi e Incentivi</span>
-                    </a>
+                        <span>Compensi & Incentivi</span>
+                    </Link>
                  </li>  
                  <li>
-                    <a href='#'>
+                 <Link to='/Governance/Trasparenza&Comunicazione' onClick={scrollToTop}>
                         <i>📢</i> {/* Icona per trasparenza e comunicazione */}
                         <span>Trasparenza e Comunicazione</span>
-                    </a>                    
+                    </Link>                    
                  </li>    
                 </ul>
             </li>

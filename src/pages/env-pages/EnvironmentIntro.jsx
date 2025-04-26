@@ -26,7 +26,7 @@ function EnviromentIntro() {
           <h2>🌿 Impegno Ambientale di ENAV</h2>
           <div className="intro-description">
             <p>
-              Il Gruppo ENAV, consapevole del proprio ruolo nei confronti del sistema Paese, è da tempo impegnato nella riduzione dell’impatto ambientale delle sue attività e considera la tutela del pianeta un obiettivo imprescindibile.
+              Il Gruppo ENAV, è da tempo impegnato nella riduzione dell’impatto ambientale delle sue attività e considera la tutela del pianeta un obiettivo imprescindibile.
             </p>
             <p>
               La sua strategia si basa su tre pilastri fondamentali che riflettono l'approccio sistemico ed integrato che guida tutte le sue azioni.

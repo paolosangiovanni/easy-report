@@ -125,7 +125,7 @@
 /* bottini per la sezione successiva */
 
 /* Wrapper per descrizione e bottoni */
-.esg-links-wrapper {
+.inv-links-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,14 +134,14 @@
 }
 
 /* Descrizione sopra i bottoni */
-.esg-links-description {
+.inv-links-description {
   text-align: center;
   font-size: 1.1rem;
   color: #333;
 }
 
 /* Contenitore dei bottoni */
-.esg-links {
+.inv-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,7 +150,7 @@
 }
 
 /* Stile dei bottoni */
-.esg-link-btn {
+.inv-link-btn {
   padding: 12px 20px;
   background-color: #0c965f;
   color: #ffffff;
@@ -164,6 +164,7 @@
   min-width: 250px;
 }
 
-.esg-link-btn:hover {
+.inv-link-btn:hover {
   background-color: #045937;
+  color: white;
 }

@@ -1,0 +1,252 @@
+/* Container principale */
+.sviluppo-content {
+    background-color: #ffffff;
+    padding: 40px 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .sviluppo-content h2,
+  .sviluppo-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .sviluppo-content h3 {
+    font-size: 1.8rem;
+    margin-top: 50px;
+  }
+  
+  /* Descrizione introduttiva */
+  .sviluppo-description p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  /* Descrizioni grafici */
+  .sviluppo-chart-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  /* Grafici */
+  .sviluppo-chart-container {
+    margin: 30px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .sviluppo-chart-container:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Canva Employee Attraction e Piano Formazione */
+
+  .employee-attraction-canva,
+  .piano-formazione-canva {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  
+  .employee-attraction-item,
+  .piano-formazione-item {
+    background-color: #e9f5f0;
+    border-radius: 10px;
+    flex: 1 1 calc(45% - 10px);
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .employee-attraction-item:hover,
+  .piano-formazione-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .employee-attraction-item h4,
+  .piano-formazione-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #045937;
+  }
+  
+  .employee-attraction-item p,
+  .piano-formazione-item p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Iniziative di sviluppo */
+  .sviluppo-initiatives-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .sviluppo-initiative-card {
+    width: 280px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sviluppo-initiative-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .sviluppo-initiative-card span {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .sviluppo-initiative-card h4 {
+    color: #045937;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Bottoni modali */
+  .sviluppo-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sviluppo-modal-btn.open {
+    transform: rotate(45deg);
+    color: #045937;
+  }
+  
+  /* Modali */
+  .sviluppo-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .sviluppo-modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .sviluppo-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background-color: white;
+    border: 1px solid #e8e1e1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #045937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .sviluppo-modal-close:hover {
+    background-color: #0c965f;
+    color: white;
+  }
+  
+  /* Sezione successiva */
+  .sviluppo-next-section {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .sviluppo-next-section p {
+    margin-bottom: 20px;
+  }
+  
+  .arrow-link {
+    text-decoration: none;
+  }
+  
+  .down-arrow-btn {
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: #0c965f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .down-arrow-btn:hover {
+    background-color: #045937;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sviluppo-initiatives-grid,
+    .employee-attraction-canva,
+    .piano-formazione-canva {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .employee-attraction-item,
+    .piano-formazione-item {
+      flex: 1 1 100%;
+    }
+  }
+  

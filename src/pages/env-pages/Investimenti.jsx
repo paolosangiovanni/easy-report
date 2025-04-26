@@ -110,14 +110,14 @@ const Investimenti = () => {
           )}
 
 
-            <div className="esg-links-wrapper">
-              <div className="esg-links-description">
+            <div className="inv-links-wrapper">
+              <div className="inv-links-description">
                 <p>Esplora gli altri ambiti <strong>ESG</strong> oppure torna alla Home 🏠</p>
               </div>
-              <div className="esg-links">
-                <Link to="/Social" className="esg-link-btn" onClick={scrollToTop}>👥 Vai alla sezione Sociale</Link>
-                <Link to="/Governance" className="esg-link-btn" onClick={scrollToTop}>🏛️ Vai alla sezione Governance</Link>
-                <Link to="/" className="esg-link-btn" onClick={scrollToTop}>🏠 Vai alla Home</Link>
+              <div className="inv-links">
+                <Link to="/Social" className="inv-link-btn" onClick={scrollToTop}>👥 Vai alla sezione Sociale</Link>
+                <Link to="/Governance" className="inv-link-btn" onClick={scrollToTop}>🏛️ Vai alla sezione Governance</Link>
+                <Link to="/" className="inv-link-btn" onClick={scrollToTop}>🏠 Vai alla Home</Link>
               </div>
             </div>
             

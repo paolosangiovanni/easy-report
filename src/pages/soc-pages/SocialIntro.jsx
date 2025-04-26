@@ -132,7 +132,7 @@ function SocialIntro() {
           {/* Sezione link a Diversità e Inclusione */}
           <div className="next-section">
             <p>Per approfondire l’impegno di ENAV in ambito sociale, scopri la sezione dedicata alla <strong>Diversità e Inclusione</strong> 🌈.</p>
-            <Link to="/Social/DiversitaInclusione" className="arrow-link" onClick={scrollToTop}>
+            <Link to="/Social/Diversita&Inclusione" className="arrow-link" onClick={scrollToTop}>
               <button className="down-arrow-btn">↓</button>
             </Link>
           </div>

@@ -1,0 +1,221 @@
+/* Container principale */
+.relazioni-container {
+    background-color: #ffffff;
+    padding: 40px 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .relazioni-container h2, .relazioni-container h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #0c965f, #045937);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0c965f;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .relazioni-container h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  
+  /* Descrizione introduttiva */
+  .relazioni-description p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  
+  /* Canva delle iniziative */
+  .relazioni-canva {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .relazioni-canva-item {
+    width: 280px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .relazioni-canva-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .relazioni-canva-item h4 {
+    color: #045937;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Bottoni modali */
+  .relazioni-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .relazioni-modal-btn.open {
+    transform: rotate(45deg);
+    color: #045937;
+  }
+  
+  /* Modali */
+  .relazioni-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .relazioni-modal {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+  
+  .relazioni-modal-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    background-color: white;
+    border: 1px solid #e8e1e1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #045937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .relazioni-modal-close:hover {
+    background-color: #0c965f;
+    color: white;
+  }
+  
+  /* Canva circolare relazioni clienti */
+  .relazioni-canva {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .relazioni-circle {
+    width: 200px;
+    height: 200px;
+    background-color: #e9f5f0;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .relazioni-circle p {
+    margin-top: 10px;
+    color: #045937;
+    font-weight: bold;
+  }
+  
+/* bottini per la sezione successiva */
+
+/* Wrapper per descrizione e bottoni */
+.relazionicom-links-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+  }
+  
+  /* Descrizione sopra i bottoni */
+  .relazionicom-links-description {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Contenitore dei bottoni */
+  .relazionicom-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-top:  0px;
+  }
+  
+  /* Stile dei bottoni */
+  .relazionicom-link-btn {
+    padding: 12px 20px;
+    background-color: #0c965f;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-width: 250px;
+  }
+  
+  .relazionicom-link-btn:hover {
+    background-color: #045937;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .relazioni-canva {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

@@ -41,12 +41,18 @@ import SocialIntro from './pages/soc-pages/SocialIntro.jsx';
 import GovernanceIntro from './pages/gov-pages/GovernanceIntro.jsx';
 
 //import Costanti per Enviroment
-import './data/route_costants.js';
 import FlightEfficencyplan from './pages/env-pages/FlightEfficencyPlan.jsx';
 import CarbonFootprint from './pages/env-pages/CarbonFootprint.jsx';
 import InnovazioneTecnologica from './pages/env-pages/InnovazioneTecnologica.jsx';
 import Investimenti from './pages/env-pages/Investimenti.jsx';
 
+
+//import Costanti per Social
+import DiversitaEInclusione from './pages/soc-pages/DiversitaeInclusione.jsx';
+import SviluppodeiDipendenti from './pages/soc-pages/SviluppodeiDipendenti.jsx';
+import SaluteESicurezza from './pages/soc-pages/SaluteeSicurezza.jsx';
+import BenessereDeiDipendenti from './pages/soc-pages/BenesseredeiDipendenti.jsx';
+import RelazioniComunitarie from './pages/soc-pages/RelazioniComunitarie.jsx';
 
 
 
@@ -111,6 +117,29 @@ const router = createBrowserRouter([
     path:'/Enviroment/Investimenti',
     element: <><Layout/> <Investimenti/></>,
   },
+
+    //Sottopagine Social
+
+    {
+      path:'/Social/Diversita&Inclusione',
+      element: <><Layout/> <DiversitaEInclusione/></>,
+    },
+    {
+      path:'/Social/SviluppoDeiDipendenti',
+      element: <><Layout/> <SviluppodeiDipendenti/></>,
+    },
+    {
+      path:'/Social/Salute&Sicurezza',
+      element: <><Layout/> <SaluteESicurezza/></>,
+    },
+    {
+      path:'/Social/BenessereDeiDipendenti',
+      element: <><Layout/> <BenessereDeiDipendenti/></>,
+    },
+    {
+      path:'/Social/RelazioniComunitarie',
+      element: <><Layout/> <RelazioniComunitarie/></>,
+    },
 
 ])
 

@@ -105,28 +105,34 @@ function SideBar() {
                     </Link>                       
                  </li>
                  <li>
-                    <a href='#'>
+                    <Link to='/Social/Diversita&Inclusione' onClick={scrollToTop}>
                         <i>🌈</i> {/* Icona per la diversità e l'inclusione */}
-                        <span>Diversità e Inclusione</span>
-                    </a>                       
+                        <span>Diversità & Inclusione</span>
+                    </Link>                 
                  </li>
                  <li>
-                    <a href='#'>
+                    <Link to='/Social/SviluppoDeiDipendenti' onClick={scrollToTop}>
+                        <i>👨‍💼👩‍💼</i> {/* Icona per la diversità e l'inclusione */}
+                        <span>Sviluppo dei Dipendenti</span>
+                    </Link>                 
+                 </li>
+                 <li>
+                    <Link to='/Social/Salute&Sicurezza' onClick={scrollToTop}>
                         <i>🩹</i> {/* Icona per la salute e la sicurezza */}
                         <span>Salute & Sicurezza</span>
-                    </a> 
+                    </Link> 
                  </li>
                  <li>
-                    <a href='#'>
+                    <Link to='/Social/BenessereDeiDipendenti' onClick={scrollToTop}>
                         <i>👨‍👩‍👧‍👦</i> {/* Icona per il benessere dei dipendenti */}
                         <span>Benessere dei dipendenti</span>
-                    </a>
+                    </Link>
                  </li>                   
                  <li>
-                    <a href='#'>
+                    <Link to='/Social/RelazioniComunitarie' onClick={scrollToTop}>
                         <i>🏘️</i> {/* Icona per le relazioni comunitarie */}
                         <span>Relazioni Comunitarie</span>
-                    </a>
+                    </Link>
                  </li>     
                 </ul>
             </li>

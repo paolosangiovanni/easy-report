@@ -16,7 +16,7 @@ import './App.css';
 import Layout from './components/Layout.jsx';
 
 //import ReactRouter
-import { createBrowserRouter, RouterProvider,  } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, BrowserRouter } from 'react-router-dom';
 
 //Import Costanti Homepage
 import Overview from './pages/Overview.jsx';
@@ -176,7 +176,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <BrowserRouter basename="/easy-report">
+      <RouterProvider router={router} />
+    </BrowserRouter>
   </React.StrictMode>
 );
 

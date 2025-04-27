@@ -1,6 +1,15 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
+
+ //import icone lib remix e bootstrap
+ import 'bootstrap-icons/font/bootstrap-icons.css';
+ import 'remixicon/fonts/remixicon.css';
+ 
+ //import Bootstrap
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ import 'bootstrap/dist/js/bootstrap.min.js';
+
 // Import dei componenti e delle pagine
 import Layout from './components/Layout.jsx';
 import Overview from './pages/Overview.jsx';

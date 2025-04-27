@@ -1,71 +1,79 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Easy-Report
 
-## Available Scripts
+Easy-Report è una pagina web progettata per semplificare La visualizzazione di report aziendali, consentendo agli utenti di visualizzare report di sostenibilità in modo rapido e intuitivo. Il progetto è stato sviluppato come progetto di Laurea prendendo come case study la società ENAV S.P.A.
 
-In the project directory, you can run:
+## Caratteristiche principali
 
-### `npm start`
+1. **Generazione di report:** Crea report dinamici con grafici, tabelle e altre informazioni aziendali, personalizzabili per soddisfare le esigenze specifiche.
+2. **Visualizzazione dei dati:** Visualizza i report in modo interattivo con il supporto di grafici e tabelle, sfruttando librerie moderne come Chart.js per un'esperienza utente ottimale.
+3. **Export in PDF:** Una funzionalità che permette di scaricare i report in formato PDF, utile per la distribuzione o l'archiviazione.
+4. **Interfaccia intuitiva:** Facile da usare anche per chi non ha competenze tecniche, con un'interfaccia chiara e ben progettata.
+5. **Responsive design:** L'applicazione si adatta perfettamente a diversi dispositivi, offrendo una visualizzazione ottimale su desktop, tablet e smartphone.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tecnologie utilizzate
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Easy-Report è costruito utilizzando una serie di tecnologie moderne per offrire un'esperienza utente ottimale e una gestione efficiente dei dati:
 
-### `npm test`
+- **React.js**: Libreria JavaScript per la costruzione di interfacce utente dinamiche e reattive.
+- **Material-UI**: Framework per componenti React (Breadcrumb) che implementa il Material Design, per un'interfaccia moderna.
+- **Bootstrap**: Framework CSS per garantire un design responsivo e mobile-first.
+- **Chart.js & React-Chartjs-2**: Utilizzati per creare grafici interattivi e visivamente accattivanti.
+- **Canvas-Confetti**: Aggiunge effetti di confetti animati per eventi significativi nell'applicazione.
+- **React Router**: Gestisce la navigazione tra le pagine dell'applicazione.
+- **Remix Icon**: Libreria di icone moderne per migliorare l'aspetto visivo.
+- **@emotion/react & @emotion/styled**: CSS-in-JS per una gestione avanzata degli stili nei componenti React.
+- **React-Scripts**: Strumenti per la configurazione automatica di Webpack, Babel e ESLint.
+- **Web-Vitals**: Monitoraggio delle performance per garantire una buona esperienza utente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Come iniziare
 
-### `npm run build`
+### Prerequisiti
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Prima di iniziare, assicurati di avere installato i seguenti strumenti:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Node.js**: [Download Node.js](https://nodejs.org/)
+2. **Git**: [Download Git](https://git-scm.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installazione
 
-### `npm run eject`
+1. **Clona il repository sulla tua macchina locale:**
+   ```bash
+   git clone https://github.com/tuo-username/easy-report.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Vai nella cartella del progetto:**
+   ```bash
+   cd easy-report
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Installa le dipendenze:**
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Avvia l'applicazione in modalità di sviluppo:**
+   ```bash
+   npm start
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Vai su `http://localhost:3000` nel tuo browser per visualizzare l'applicazione.**
 
-## Learn More
+### Esegui il build per la produzione
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se vuoi fare il deploy dell'applicazione in produzione, esegui il comando:
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contribuire
 
-### Code Splitting
+Se vuoi contribuire a questo progetto, sentiti libero di fare un fork e inviare un pull request. Se hai domande o suggerimenti, apri una issue nel repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Licenza
 
-### Analyzing the Bundle Size
+Questo progetto è sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# easy-report" 
+Grazie per aver consultato Easy-Report!

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/paolosangiovanni.github.io/easy-report/static/css/main.0a49e2e6.css",
+    "main.js": "/paolosangiovanni.github.io/easy-report/static/js/main.dce6a2bd.js",
+    "static/js/488.a73373a0.chunk.js": "/paolosangiovanni.github.io/easy-report/static/js/488.a73373a0.chunk.js",
+    "static/media/remixicon.svg?t=1734404658139": "/paolosangiovanni.github.io/easy-report/static/media/remixicon.df9902a6df13645438e1.svg",
+    "static/media/remixicon.eot?t=1734404658139": "/paolosangiovanni.github.io/easy-report/static/media/remixicon.29066d810a74e994be27.eot",
+    "static/media/remixicon.ttf?t=1734404658139": "/paolosangiovanni.github.io/easy-report/static/media/remixicon.868d1a768f4762dbcc3e.ttf",
+    "static/media/remixicon.woff?t=1734404658139": "/paolosangiovanni.github.io/easy-report/static/media/remixicon.ce82bb240fef24f93f95.woff",
+    "static/media/remixicon.woff2?t=1734404658139": "/paolosangiovanni.github.io/easy-report/static/media/remixicon.bb211d855a1864aa5b67.woff2",
+    "static/media/bootstrap-icons.woff?": "/paolosangiovanni.github.io/easy-report/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/paolosangiovanni.github.io/easy-report/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/paolosangiovanni.github.io/easy-report/index.html",
+    "main.0a49e2e6.css.map": "/paolosangiovanni.github.io/easy-report/static/css/main.0a49e2e6.css.map",
+    "main.dce6a2bd.js.map": "/paolosangiovanni.github.io/easy-report/static/js/main.dce6a2bd.js.map",
+    "488.a73373a0.chunk.js.map": "/paolosangiovanni.github.io/easy-report/static/js/488.a73373a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a49e2e6.css",
+    "static/js/main.dce6a2bd.js"
+  ]
+}

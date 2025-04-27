@@ -1,14 +1,13 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 
+//import icone lib remix e bootstrap
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'remixicon/fonts/remixicon.css';
 
- //import icone lib remix e bootstrap
- import 'bootstrap-icons/font/bootstrap-icons.css';
- import 'remixicon/fonts/remixicon.css';
- 
- //import Bootstrap
- import 'bootstrap/dist/css/bootstrap.min.css';
- import 'bootstrap/dist/js/bootstrap.min.js';
+//import Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 // Import dei componenti e delle pagine
 import Layout from './components/Layout.jsx';
@@ -39,7 +38,7 @@ import CompensieIncentivi from './pages/gov-pages/CompensieIncentivi.jsx';
 import TrasparenzaeComunicazione from './pages/gov-pages/TrasparenzaeComunicazione.jsx';
 
 // Definizione delle rotte
-const router = createBrowserRouter([
+const router = createHashRouter([
   { path: '/', element: <Layout><Overview /></Layout>, errorElement: <ErrorPage /> },
   { path: '/PianoSostenibilita', element: <Layout><PianoSostenibilita /></Layout> },
   { path: '/PanoramicaESG', element: <Layout><PanoramicaESG /></Layout> },

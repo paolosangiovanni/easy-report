@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from './reportWebVitals.js';
 
 //import icone lib remix e bootstrap
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -13,26 +13,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 import './App.css';
-import Layout from './components/Layout';
+import Layout from './components/Layout.jsx';
 
 //import ReactRouter
 import { createBrowserRouter, RouterProvider,  } from 'react-router-dom';
 
 //Import Costanti Homepage
-import Overview from './pages/Overview';
-import ErrorPage from './pages/ErrorPage';
+import Overview from './pages/Overview.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 
 //Import Costanti per Piano Sostenibilità 21-24
 
-import PianoSostenibilita from './pages/PianoSostenibilita';
+import PianoSostenibilita from './pages/PianoSostenibilita.jsx';
 
 //Import Costanti per Piano Sostenibilità 21-24
 
-import PanoramicaESG from './pages/PanoramicaESG';
+import PanoramicaESG from './pages/PanoramicaESG.jsx';
 
 //Import Costanti per Download Report
 
-import DownloadReport from './pages/DownloandReport';
+import DownloadReport from './pages/DownloandReport.jsx';
 
 //Import Costanti per Intro
 import EnviromentIntro from './pages/env-pages/EnvironmentIntro.jsx';

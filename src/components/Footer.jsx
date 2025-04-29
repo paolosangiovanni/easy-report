@@ -2,6 +2,10 @@ import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 function Footer() {
   return (
     <footer className="easy-footer">
@@ -13,11 +17,11 @@ function Footer() {
         <div className="footer-links">
           <h4>Collegamenti Utili</h4>
           <ul>
-            <li><a href="/">🏠Home</a></li>
-            <li><a href="/Enviroment">🌿 Environment</a></li>
-            <li><a href="/Social">👥 Social</a></li>
-            <li><a href="/Governance">🏛️ Governance</a></li>
-            <li><a href="/DownloadReport">📥 Scarica il Report di Sostenibilità</a></li>
+            <li><Link to="/" onClick={scrollToTop}>🏠Home</Link></li>
+            <li><Link to="/Enviroment" onClick={scrollToTop}>🌿 Environment</Link></li>
+            <li><Link to="/Social" onClick={scrollToTop}>👥 Social</Link></li>
+            <li><Link to="/Governance" onClick={scrollToTop}>🏛️ Governance</Link></li>
+            <li><Link to="/DownloadReport" onClick={scrollToTop}>📥 Scarica il Report di Sostenibilità</Link></li>
           </ul>
         </div>
         <div className="footer-contact">

@@ -170,7 +170,7 @@
     color: white;
   }
   
-  /* Responsive */
+  /* Media query per Modali e cards Responsive */
   @media (max-width: 768px) {
     .risk-cards, .risk-modals {
       flex-direction: column;

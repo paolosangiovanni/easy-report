@@ -129,7 +129,7 @@
 
 @media (max-width: 600px) {
     .flight-efficiency-plan h2 {
-        font-size: 2rem; /* Riduci la dimensione del titolo su schermi piccoli */
+        font-size: 2rem; /* Riduce la dimensione del titolo su schermi piccoli */
     }
     .description {
         font-size: 1rem;

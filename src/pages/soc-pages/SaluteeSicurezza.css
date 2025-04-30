@@ -361,7 +361,7 @@
   }
   
   
-  /* Responsive */
+  /* Media griglia Responsive */
   @media (max-width: 768px) {
     .salute-initiatives-grid {
       flex-direction: column;

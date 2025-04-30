@@ -14,7 +14,7 @@
   gap: 10px;
   max-width: 1000px;
   margin: 0 auto;
-  align-items: center; /* Centrato tutto il contenuto, incluse le card */
+  align-items: center;
 }
 
 /* Sezione principale Chi è ENAV */

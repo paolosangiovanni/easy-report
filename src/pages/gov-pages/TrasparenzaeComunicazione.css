@@ -110,7 +110,7 @@
     margin-bottom: 8px;
 }
 
-/* bottini per la sezione successiva */
+/* Bottoni per la sezione successiva */
 
 /* Wrapper per descrizione e bottoni */
 .trasp-links-wrapper {
@@ -157,7 +157,7 @@
     color: white;
   }
 
-/* Responsive */
+/* Media query per eventi e indicatori Responsive */
 @media (max-width: 768px) {
     .trasparenza-events, .trasparenza-indicators {
         flex-direction: column;

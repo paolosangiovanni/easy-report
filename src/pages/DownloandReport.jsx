@@ -10,7 +10,7 @@ function DownloadReports() {
     setPdfUrl(url);
     setModalOpen(true);
 
-    // Lancia i confetti 🎉
+    // Lancia confetti
     confetti({
       particleCount: 300,
       spread: 360,
@@ -84,7 +84,7 @@ function DownloadReports() {
           </div>
 
 
-          {/* Modal con iframe */}
+          {/* Modali con iframe */}
           {modalOpen && (
             <div className="modal-download-overlay" onClick={closeModal}>
               <div className="modal-download-content" onClick={(e) => e.stopPropagation()}>

@@ -33,14 +33,14 @@ function SideBar() {
                 </Link>
             </li>
 
-            {/* Environment Section with Intro Page */}
+            {/* Sezione Environment */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#enviroment-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i>🌿</i> {/* Icona Unicode per l'ambiente */}
+                    <i>🌿</i> 
                     <span>Environment</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -51,45 +51,45 @@ function SideBar() {
                 >
                  <li>
                     <Link to='/Enviroment' onClick={scrollToTop}>
-                        <i>📜</i> {/* Icona di introduzione */}
+                        <i>📜</i> 
                         <span>Introduzione</span>
                     </Link>                       
                  </li>
                  <li>
                     <Link to='/Enviroment/FEP&FRA' onClick={scrollToTop}>
-                        <i>✈️</i> {/* Icona per il piano di efficienza */}
+                        <i>✈️</i> 
                         <span>Flight Efficiency Plan & FRA</span>
                     </Link>                       
                  </li>
                  <li>
                     <Link to='/Enviroment/CarbonFootprint' onClick={scrollToTop}>
-                        <i>🌳</i> {/* Icona per l'impronta di carbonio */}
+                        <i>🌳</i>
                         <span>Carbon Footprint</span>
                     </Link> 
                  </li>
                  <li>
                     <Link to='/Enviroment/InnovazioneTecnologica' onClick={scrollToTop}>
-                        <i>🌐</i> {/* Icona per il consumo di energia */}
+                        <i>🌐</i> 
                         <span>Innovazione Tecnologica</span>
                     </Link>
                  </li>                   
                  <li>
                     <Link to='/Enviroment/Investimenti' onClick={scrollToTop}>
-                        <i>📈</i> {/* Icona per gli investimenti */}
+                        <i>📈</i> 
                         <span>Investimenti</span>
                     </Link>
                  </li>    
                 </ul>
             </li>
 
-            {/* Social Section with Intro Page */}
+            {/* Sezione Social  */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#social-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i>👥</i> {/* Icona per la sezione Social */}
+                    <i>👥</i> 
                     <span>Social</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -100,51 +100,51 @@ function SideBar() {
                 >
                  <li>
                     <Link to='/Social' onClick={scrollToTop}>
-                        <i>📜</i> {/* Icona di introduzione per Social */}
+                        <i>📜</i> 
                         <span>Introduzione</span>
                     </Link>                       
                  </li>
                  <li>
                     <Link to='/Social/Diversita&Inclusione' onClick={scrollToTop}>
-                        <i>🌈</i> {/* Icona per la diversità e l'inclusione */}
+                        <i>🌈</i> 
                         <span>Diversità & Inclusione</span>
                     </Link>                 
                  </li>
                  <li>
                     <Link to='/Social/SviluppoDeiDipendenti' onClick={scrollToTop}>
-                        <i>👨‍💼👩‍💼</i> {/* Icona per la diversità e l'inclusione */}
+                        <i>👨‍💼👩‍💼</i> 
                         <span>Sviluppo dei Dipendenti</span>
                     </Link>                 
                  </li>
                  <li>
                     <Link to='/Social/Salute&Sicurezza' onClick={scrollToTop}>
-                        <i>🩹</i> {/* Icona per la salute e la sicurezza */}
+                        <i>🩹</i> 
                         <span>Salute & Sicurezza</span>
                     </Link> 
                  </li>
                  <li>
                     <Link to='/Social/BenessereDeiDipendenti' onClick={scrollToTop}>
-                        <i>👨‍👩‍👧‍👦</i> {/* Icona per il benessere dei dipendenti */}
+                        <i>👨‍👩‍👧‍👦</i> 
                         <span>Benessere dei dipendenti</span>
                     </Link>
                  </li>                   
                  <li>
                     <Link to='/Social/RelazioniComunitarie' onClick={scrollToTop}>
-                        <i>🏘️</i> {/* Icona per le relazioni comunitarie */}
+                        <i>🏘️</i> 
                         <span>Relazioni Comunitarie</span>
                     </Link>
                  </li>     
                 </ul>
             </li>
 
-            {/* Governance Section with Intro Page */}
+            {/* Sezione Governance  */}
             <li className='nav-item'>
                 <a 
                     className='nav-link collapsed'
                     data-bs-target='#governance-nav'
                     data-bs-toggle='collapse'
                     href='#' >
-                    <i>🏛️</i> {/* Icona per la sezione Governance */}
+                    <i>🏛️</i> 
                     <span>Governance</span>
                     <i className="bi bi-chevron-down ms-auto"></i>
                 </a>
@@ -155,37 +155,37 @@ function SideBar() {
                 >
                  <li>
                     <Link to='/Governance' onClick={scrollToTop}>
-                        <i>📜</i> {/* Icona di introduzione per Governance */}
+                        <i>📜</i> 
                         <span>Introduzione</span>
                     </Link>                       
                  </li>
                  <li>
                     <Link to='/Governance/StrutturaDelCDA' onClick={scrollToTop}>
-                        <i>🏢</i> {/* Icona per la struttura del consiglio */}
+                        <i>🏢</i>
                         <span>Struttura del CDA</span>
                     </Link>                       
                  </li>
                  <li>
                     <Link to='/Governance/Etica&Conformita' onClick={scrollToTop}>
-                        <i>⚖️</i> {/* Icona per etica e conformità */}
+                        <i>⚖️</i>
                         <span>Etica & Conformità</span>
                     </Link> 
                  </li>
                  <li>
                  <Link to='/Governance/GestioneDelRischio' onClick={scrollToTop}>
-                        <i>🔒</i> {/* Icona per la gestione del rischio */}
+                        <i>🔒</i> 
                         <span>Gestione del Rischio</span>
                     </Link>
                  </li>                   
                  <li>
                  <Link to='/Governance/Compensi&Incentivi' onClick={scrollToTop}>
-                        <i>💶</i> {/* Icona per compensi e incentivi */}
+                        <i>💶</i> 
                         <span>Compensi & Incentivi</span>
                     </Link>
                  </li>  
                  <li>
                  <Link to='/Governance/Trasparenza&Comunicazione' onClick={scrollToTop}>
-                        <i>📢</i> {/* Icona per trasparenza e comunicazione */}
+                        <i>📢</i> 
                         <span>Trasparenza e Comunicazione</span>
                     </Link>                    
                  </li>    

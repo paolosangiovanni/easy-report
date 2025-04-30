@@ -129,7 +129,7 @@ const FlightEfficiencyPlan = () => {
             </div>
           </div>
 
-          {/* Aggiungiamo la sezione Free Route Airspace Italy (FRA) */}
+          {/*Sezione Free Route Airspace Italy (FRA) */}
           <h2>🌍 Free Route Airspace Italy (FRA)</h2>
           <div className="description">
             <p>
